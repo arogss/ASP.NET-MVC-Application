@@ -1,0 +1,67 @@
+﻿@model Assgn2.Models.Person
+
+@{
+    ViewBag.Title = "MyProfile";
+}
+
+<h2>My Profile</h2>
+
+<div>
+
+    <table class="table" border="1">
+        <tr>
+            <td>
+                @Html.DisplayNameFor(model => model.username)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.username)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayNameFor(model => model.email)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.email)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayNameFor(model => model.mobile)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.mobile)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayNameFor(model => model.dob)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.dob)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayNameFor(model => model.city)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.city)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayNameFor(model => model.country)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.country)
+            </td>
+        </tr>
+
+    </table>
+
+</div>
+
+<p>
+    @Html.ActionLink("Back to Register", "Register")
+</p>
